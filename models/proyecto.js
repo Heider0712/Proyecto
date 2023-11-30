@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose')
 const ProyectoSchema = Schema({
     id: {
-        type: String,
+        type: Number,
         required: [true, 'EL nombre es obligatoria!']
     },
     
@@ -10,15 +10,15 @@ const ProyectoSchema = Schema({
         required: [true, 'EL nombre es obligatoria!']
     },
     horasDedicadas: {
-        type: String,
+        type: Number,
         required: [true, 'La horas son obligatoria!']
     },
     valorProyecto: {
-        type: String,
+        type: Number,
         required: [true, 'el valor del proyecto es obligatoria!'],
         numeroIntegrantes: {
-            type: String,
-            required: [true, 'el numero de integrantes es obligatoria!']
+    type: Number,
+        required: [true, 'el numero de integrantes es obligatoria!']
         }
     }
 })
